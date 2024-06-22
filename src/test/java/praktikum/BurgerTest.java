@@ -96,5 +96,8 @@ public class BurgerTest {
     burger.addIngredient(ingredient1);
     burger.addIngredient(ingredient2);
     assertEquals(expectedReceipt, burger.getReceipt());
+
+
+
   }
 }
