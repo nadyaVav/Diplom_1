@@ -44,7 +44,6 @@ public class BurgerTest {
     burger.removeIngredient(0);
     assertEquals(0, burger.ingredients.size());
     assertTrue(burger.ingredients.isEmpty());
-
   }
 
   @Test
@@ -55,7 +54,6 @@ public class BurgerTest {
     assertEquals(ingredient1, burger.ingredients.get(1));
     assertEquals(ingredient2, burger.ingredients.get(0));
     assertEquals(2, burger.ingredients.size());
-
   }
 
   @Test
@@ -69,7 +67,6 @@ public class BurgerTest {
     assertEquals(300f, burger.getPrice(),0);
     Mockito.verify(bun, Mockito.times(1)).getPrice();
     Mockito.verify(ingredient1, Mockito.times(1)).getPrice();
-
   }
 
   @Test
